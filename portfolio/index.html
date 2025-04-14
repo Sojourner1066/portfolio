@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GIS Portfolio | Your Name</title>
+    <title>GIS Portfolio | Morgan Grundy</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
   </head>
   <body>
     <nav class="container-fluid">
       <ul>
-        <li><strong>Your Name</strong></li>
+        <li><strong>Morgan Grundy</strong></li>
       </ul>
       <ul>
         <li><a href="#about">About</a></li>
@@ -40,18 +40,160 @@
           <h3 id="projects">Highlighted Projects</h3>
           <p>Explore a few of my standout GIS projects from the program:</p>
           <ul>
-            <li><strong>Interactive Crime Mapping App</strong> – Web app using Leaflet & crime data for spatial awareness</li>
+            <li><strong>Analysis of Formula One crashes</strong> – Web app using Leaflet & crime data for spatial awareness</li>
             <li><strong>Land Use Change Analysis</strong> – Remote sensing and classification techniques in ArcGIS Pro</li>
             <li><strong>Geodatabase Design</strong> – Designed a custom schema for environmental data</li>
           </ul>
 
-          <!-- DALL·E-generated 3x3 project grid image -->
-          <figure>
-            <a href="https://example.com" target="_blank">
-              <img src="https://files.oaiusercontent.com/file-XXmFAkiraKvfKf8mJzmtui?se=2025-04-14T18%3A31%3A07Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dda63c01c-5867-4d81-9b08-4ccd920d4ebd.webp&sig=UunCUoidT0B//OdMvDWy5NjI8bl4CJ9NpWRkHS0KI6c%3D" alt="GIS and Cartography Projects Grid" style="border-radius: 8px;" />
-            </a>
-            <figcaption>Custom image generated with DALL·E for GIS project showcase</figcaption>
-          </figure>
+          <h3 id="projects">Highlighted Projects</h3>
+          <p>Explore my GIS portfolio — hover over any card to reveal project details.</p>
+
+          <style>
+            .card-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+              gap: 1.5rem;
+              perspective: 1000px;
+            }
+
+            .card {
+              position: relative;
+              width: 100%;
+              padding-top: 75%;
+              transform-style: preserve-3d;
+              transition: transform 0.8s;
+            }
+
+            .card:hover {
+              transform: rotateY(180deg);
+            }
+
+            .card-inner {
+              position: absolute;
+              top: 0; left: 0;
+              width: 100%; height: 100%;
+              transform-style: preserve-3d;
+            }
+
+            .card-front, .card-back {
+              position: absolute;
+              width: 100%; height: 100%;
+              backface-visibility: hidden;
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            }
+
+            .card-front img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            .card-back {
+              background-color: #f1f1f1;
+              transform: rotateY(180deg);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 1rem;
+              font-size: 0.95rem;
+              text-align: center;
+            }
+          </style>
+
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://cdn-2.motorsport.com/images/mgl/YPKwblj2/s1200/f1-singapore-gp-2017-sebastian-vettel-ferrari-sf70h-max-verstappen-red-bull-racing-rb13-an.webp" alt="Spatial Analysis of Formula 1 Crashes">
+                </div>
+                <div class="card-back">
+                  <a href="https://storymaps.arcgis.com/stories/91e2b1058d5e46a09543f9004a58b6bd" target="_blank">COLLISION! Spatial Analysis of Formula 1 Crashes</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://files.oaiusercontent.com/file-XXmFAkiraKvfKf8mJzmtui?..." alt="Urban Planning">
+                </div>
+                <div class="card-back">
+                  Satellite imagery analysis for urban planning insights.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://files.oaiusercontent.com/file-XXmFAkiraKvfKf8mJzmtui?..." alt="Thematic Mapping">
+                </div>
+                <div class="card-back">
+                  Thematic mapping with multiple data layers in ArcGIS Pro.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://files.oaiusercontent.com/file-XXmFAkiraKvfKf8mJzmtui?..." alt="Drone Imagery">
+                </div>
+                <div class="card-back">
+                  Drone-based data capture for high-res land analysis.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://files.oaiusercontent.com/file-XXmFAkiraKvfKf8mJzmtui?..." alt="Topographic Map">
+                </div>
+                <div class="card-back">
+                  Detailed topographic map with elevation visualization.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://files.oaiusercontent.com/file-XXmFAkiraKvfKf8mJzmtui?..." alt="Dashboard Analysis">
+                </div>
+                <div class="card-back">
+                  GIS dashboard project combining spatial data & charts.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://files.oaiusercontent.com/file-XXmFAkiraKvfKf8mJzmtui?..." alt="Web Mapping App">
+                </div>
+                <div class="card-back">
+                  Web mapping app built with JavaScript and Mapbox GL.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://files.oaiusercontent.com/file-XXmFAkiraKvfKf8mJzmtui?..." alt="Data Visualization">
+                </div>
+                <div class="card-back">
+                  Interactive spatial data visualizations for trends.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="https://files.oaiusercontent.com/file-XXmFAkiraKvfKf8mJzmtui?..." alt="Map Design">
+                </div>
+                <div class="card-back">
+                  Custom cartography project using QGIS & Adobe Illustrator.
+                </div>
+              </div>
+            </div>
+          </div>
 
         </section>
       </div>
