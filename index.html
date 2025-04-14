@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GIS Portfolio | Your Name</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Your Name</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume" role="button">Resume</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <div class="grid">
+        <section>
+          <hgroup>
+            <h2>Welcome to My GIS Portfolio</h2>
+            <h3>Cartographer • GIS Analyst • Web Mapping Enthusiast</h3>
+          </hgroup>
+          <p>I specialize in creating spatial solutions, interactive maps, and GIS tools that solve real-world problems. This portfolio showcases my journey through the GIS Professional Program and highlights the skills and experiences I've gained along the way.</p>
+
+          <figure>
+            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Satellite imagery on a laptop" />
+            <figcaption>
+              <a href="https://unsplash.com/photos/gray-laptop-computer-on-top-of-gray-and-white-rug-HJckKnwCXxQ" target="_blank">Photo by NASA on Unsplash</a>
+            </figcaption>
+          </figure>
+
+          <h3 id="about">About Me</h3>
+          <p>I'm a GIS developer with a passion for spatial thinking and data visualization. My background includes extensive work with ArcGIS, Python for geoprocessing, and building web apps that bring spatial data to life.</p>
+
+          <h3 id="projects">Highlighted Projects</h3>
+          <p>Explore a few of my standout GIS projects from the program:</p>
+          <ul>
+            <li><strong>Interactive Crime Mapping App</strong> – Web app using Leaflet & crime data for spatial awareness</li>
+            <li><strong>Land Use Change Analysis</strong> – Remote sensing and classification techniques in ArcGIS Pro</li>
+            <li><strong>Geodatabase Design</strong> – Designed a custom schema for environmental data</li>
+          </ul>
+
+          <figure>
+            <img src="https://images.unsplash.com/photo-1610968911462-1450d7e2c3a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Topographic map" />
+            <figcaption>
+              <a href="https://unsplash.com/photos/topographic-map-RN6ts8IZ4_0" target="_blank">Photo by Jeremy Bezanger on Unsplash</a>
+            </figcaption>
+          </figure>
+        </section>
+      </div>
+    </main>
+
+    <section aria-label="Subscribe example">
+      <div class="container">
+        <article>
+          <hgroup>
+            <h2>Stay Connected</h2>
+            <h3>Subscribe for updates or get in touch</h3>
+          </hgroup>
+          <form class="grid">
+            <input type="text" id="firstname" name="firstname" placeholder="Your name" aria-label="Your name" required />
+            <input type="email" id="email" name="email" placeholder="Your email" aria-label="Your email" required />
+            <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <footer class="container" id="resume">
+      <small>
+        <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a> •
+        <a href="resume.pdf" target="_blank">Download Resume</a>
+      </small>
+    </footer>
+  </body>
+</html>
