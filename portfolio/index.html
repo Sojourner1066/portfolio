@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GIS Portfolio | Morgan Grundy</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="container-fluid">
@@ -48,64 +49,14 @@
           <h3 id="projects">Highlighted Projects</h3>
           <p>Explore my GIS portfolio — hover over any card to reveal project details.</p>
 
-          <style>
-            .card-grid {
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-              gap: 1.5rem;
-              perspective: 1000px;
-            }
-
-            .card {
-              position: relative;
-              width: 100%;
-              padding-top: 75%;
-              transform-style: preserve-3d;
-              transition: transform 0.8s;
-            }
-
-            .card:hover {
-              transform: rotateY(180deg);
-            }
-
-            .card-inner {
-              position: absolute;
-              top: 0; left: 0;
-              width: 100%; height: 100%;
-              transform-style: preserve-3d;
-            }
-
-            .card-front, .card-back {
-              position: absolute;
-              width: 100%; height: 100%;
-              backface-visibility: hidden;
-              border-radius: 8px;
-              overflow: hidden;
-              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-            }
-
-            .card-front img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-
-            .card-back {
-              background-color: #f1f1f1;
-              transform: rotateY(180deg);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              padding: 1rem;
-              font-size: 0.95rem;
-              text-align: center;
-            }
-          </style>
+          <!-- <style>       
+          </style> -->
 
           <div class="card-grid">
             <div class="card">
               <div class="card-inner">
                 <div class="card-front">
+                  <div class="card-label">Map App</div>
                   <img src="https://cdn-2.motorsport.com/images/mgl/YPKwblj2/s1200/f1-singapore-gp-2017-sebastian-vettel-ferrari-sf70h-max-verstappen-red-bull-racing-rb13-an.webp" alt="Spatial Analysis of Formula 1 Crashes">
                 </div>
                 <div class="card-back">
@@ -116,10 +67,11 @@
             <div class="card">
               <div class="card-inner">
                 <div class="card-front">
-                  <img src="https://files.oaiusercontent.com/file-XXmFAkiraKvfKf8mJzmtui?..." alt="Urban Planning">
+                  <div class="card-label">MachLoop</div>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/UK_Low_Flying_Area_Action_2023_6WAL2908_%2852978731572%29.jpg/960px-UK_Low_Flying_Area_Action_2023_6WAL2908_%2852978731572%29.jpg" alt="MachLoop">
                 </div>
                 <div class="card-back">
-                  Satellite imagery analysis for urban planning insights.
+                  <a href="https://sojourner1066.github.io/machloop/" target="_blank">MachLoop Visitors Guide Mobile Application</a>
                 </div>
               </div>
             </div>
