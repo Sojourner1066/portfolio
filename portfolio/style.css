@@ -79,3 +79,7 @@
   color: var(--primary);
   font-weight: bold;
 }
+/* Hide label when card is flipped */
+.card:hover .card-label {
+  display: none;
+}
