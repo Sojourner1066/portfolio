@@ -79,7 +79,17 @@
   color: var(--primary);
   font-weight: bold;
 }
-/* Hide label when card is flipped */
-.card:hover .card-label {
-  display: none;
+
+.card-label {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  z-index: 2;
+  backface-visibility: hidden; /* 👈 Add this line */
 }
